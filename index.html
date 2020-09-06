@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Patel</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="main">
+        <div class="topnav">
+            <ul class="top-nav" id="navbar">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about-location">About Me</a></li>
+                <li><a href="#resume-location">Resume</a></li>
+                <li><a class="dropbtn" href="#projects-location">Projects</a></li>
+                <li><a class="navbar-mobile-spacing" href="#contact-me">Contact Me</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div id="banner-text">
+                <h1 class="title">Damian Patel.</h1>
+                <h3 class="subtitle">Computer Science Student.</h3>
+            </div>
+        </div>
+        <div id="about-location" class="about">
+            <div class="banner-title">
+                <h1>About Me</h1>
+            </div>
+            <div id="profile">
+                <img src="./images/damianpatel.png.png" alt="profile pic">
+            </div>
+            <div id="about-text">
+                <p>
+                    I am currently a computer science student at Georgia State University. Since I was 17 years old, I have been
+                    fond of programming and engineering. I have always considered myself a problem-solver, and the computer
+                    science path has never failed at throwing new problems my way. I view this field of study as a stepping
+                    stone toward creating projects that have a positive impact.
+                </p>
+            </div>
+        </div>
+        <div id="resume-location" class="resume">
+            <div class="banner-title">
+                <h1>Resume</h1>
+            </div>
+            <div id="resume-button-box">
+                <a id="resume-button" href="https://drive.google.com/file/d/1pAaSWX98T0TzEqRzgYUnukRNRPQiHhfT/view?usp=sharing" target="_blank">PDF Version of Resume</a>
+            </div>
+            <div id="resume-pic">
+                <img src="./images/resume-pic.PNG" alt="">
+            </div>
+        </div>
+        <div id="projects-location" class="projects">
+            <div class="banner-title">
+                <h1>Projects</h1>
+            </div>
+            <div id="projects-container">
+                <div id="sudoku">
+                    <div class="project-title">
+                        <h1>Sudoku Solving Tool</h1>
+                    </div>
+                    <div class="project-description">
+                        <h3 style="margin-bottom: 0; margin-top: 40px;">Description</h3>
+                        <p class="desc">A unique sudoku solver that can solve all 9 x 9 sudoku puzzles instantaneously using recursive backtracking.</p>
+                        <div class="technologies">
+                            <h2>Java</h2>
+                            <h2>AWT</h2>
+                            <h2>Swing</h2>
+                        </div>
+                    </div>
+                    <h2 class="source-title">Find it on GitHub and the Microsoft Store</h2>
+                    <div class="source">
+                        <a style="margin-right: 20px;" target="_blank" href="https://github.com/damianpatel/sudoku">
+                            <i style="font-size: 45px; color: black;" class="fa fa-github"></i>
+                        </a>
+                        <a target="_blank" href="https://www.microsoft.com/en-us/p/sudoku-solving-tool/9nqfmhv76f8d?activetab=pivot:overviewtab">
+                            <i style="font-size: 55px;"><img src="https://img.icons8.com/fluent/48/000000/microsoft-store.png" /></i>
+                        </a>
+                    </div>
+                    <div class="project-pics">
+                        <a target="_blank" href="./images/Sudoku_pic_1.PNG">
+                            <img style="margin-right: 10px;" src="./images/Sudoku_pic_1.PNG" alt="sudoku-pic-1">
+                        </a>
+                        <a target="_blank" href="./images/Sudoku_pic_2.PNG">
+                            <img style="margin-right: 10px;" src="./images/Sudoku_pic_2.PNG" alt="sudoku-pic-2">
+                        </a>
+                        <a target="_blank" href="./images/Sudoku_pic_3.PNG">
+                            <img style="margin-right: 10px;" src="./images/Sudoku_pic_3.PNG" alt="sudoku-pic-3">
+                        </a>                        
+                    </div>
+                </div>
+                <div id="flappy-unicorn">
+                    <div class="project-title">
+                        <h1 style="margin-top: 75px;">Flappy Unicorn</h1>
+                    </div>
+                    <div class="project-description">
+                        <h3 style="margin-bottom: 0; margin-top: 40px;">Description</h3>
+                        <p class="desc">This is a unique take on the classic mobile game previously known as Flappy Bird. In this rendition, "levels" become
+                        harder as the speed of the flying unicorn increases. Another unique aspect is the addition of a star that can earn the
+                        player an extra point if captured.</p>
+                        <div class="technologies">
+                            <h2>C#</h2>
+                            <h2>Visual Studio</h2>
+                        </div>
+                    </div>
+                    <h2 class="source-title">Find it on GitHub and Microsoft Store</h2>
+                    <div class="source">
+                        <a style="margin-right: 20px;" target="_blank" href="https://github.com/damianpatel/flappy_unicorn">
+                            <i style="font-size: 45px; color: black;" class="fa fa-github"></i>
+                        </a>
+                        <a target="_blank"
+                            href="https://www.microsoft.com/en-us/p/the-flappy-unicorn/9ng5x6582sz3?activetab=pivot:overviewtab">
+                            <i style="font-size: 55px;"><img src="https://img.icons8.com/fluent/48/000000/microsoft-store.png" /></i>
+                        </a>
+                    </div>
+                    <div class="project-pics">
+                        <a target="_blank" href="./images/flappy-pic-1.PNG">
+                            <img style="margin-right: 10px;" src="./images/flappy-pic-1.PNG" alt="flappy-pic-1">
+                        </a>
+                        <a target="_blank" href="./images/flappy-pic-2.PNG">
+                            <img style="margin-right: 10px;" src="./images/flappy-pic-2.PNG" alt="flappy-pic-2">
+                        </a>
+                        <a target="_blank" href="./images/flappy-pic-3.PNG">
+                            <img style="margin-bottom: 50px;" src="./images/flappy-pic-3.PNG" alt="flappy-pic-3">
+                        </a>
+                    </div>
+                </div>
+                <div id="base-converter">
+                    <div class="project-title">
+                        <h1>Base Converter</h1>
+                    </div>
+                    <div class="project-description">
+                        <h3 style="margin-bottom: 0; margin-top: 40px;">Description</h3>
+                        <p class="desc">
+                            With a click of a button, this application can convert any integer of any base to any other integer base of your choice.
+                        </p>
+                        <div class="technologies">
+                            <h2>Java</h2>
+                            <h2>AWT</h2>
+                            <h2>Swing</h2>
+                        </div>
+                    </div>
+                    <h2 class="source-title">Find it on GitHub and the Microsoft Store</h2>
+                    <div class="source">
+                        <a style="margin-right: 20px;" target="_blank" href="https://github.com/damianpatel/base-conversion-app">
+                            <i style="font-size: 45px; color: black;" class="fa fa-github"></i>
+                        </a>
+                        <a target="_blank" href="https://www.microsoft.com/en-us/p/the-base-converter/9pc05csr2djv?activetab=pivot:overviewtab">
+                            <i style="font-size: 55px;"><img src="https://img.icons8.com/fluent/48/000000/microsoft-store.png" /></i>
+                        </a>
+                    </div>
+                    <div class="project-pics">
+                        <a target="_blank" href="./images/base-pic-1.PNG">
+                            <img style="margin-right: 10px;" src="./images/base-pic-1.PNG" alt="base-pic-1">
+                        </a>
+                        <a target="_blank" href="./images/base-pic-2.PNG">
+                            <img style="margin-right: 10px;" src="./images/base-pic-2.PNG" alt="base-pic-2">
+                        </a>
+                        <a target="_blank" href="./images/base-pic-3.PNG">
+                            <img src="./images/base-pic-3.PNG" alt="base-pic-3">
+                        </a>
+                    </div>
+                </div>
+                <div id="this-project">
+                    <div class="project-title">
+                        <h1 style="margin-top: 70px;">This Website</h1>
+                    </div>
+                    <div class="project-description">
+                        <div class="technologies">
+                            <h2>HTML</h2>
+                            <h2>CSS</h2>
+                            <h2>JavaScript</h2>
+                        </div>
+                    </div>
+                    <h2 class="source-title">View Source Code</h2>
+                    <div class="source">
+                        <a style="margin-right: 20px;" target="_blank" href="https://github.com/damianpatel/base-conversion-app">
+                            <i style="font-size: 45px; color: black;" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-me" class="contact">
+            <div class="banner-title">
+                <h1>Let's Get in Touch</h1>
+            </div>
+            <div id="contact-links">
+                <a href="mailto:damian.patel2001@gmail.com">
+                    <i style="font-size: 2.2em;" class="fa fa-envelope"></i>
+                </a>
+                <a target="_blank" href="https://linkedin.com/in/damian-patel-031719136">
+                    <i style="font-size: 2.2em; color: rgb(49, 66, 219);" class="fa fa-linkedin-square"></i>
+                </a>
+            </div>
+            <div id="contact-info-container">
+                <h3 style="margin-top: 0;"><a href="mailto:damian.patel2001@gmail.com">Email: <br> damian.patel2001@gmail.com</a></h3>
+                <h3 style="margin-top: 0;">Mobile: <br> (770) 833-2893</h3>
+            </div>
+        </div>
+        <div id="footer">
+            <a target="_blank" href="https://icons8.com/icon/P0xhuRBy8MnO/microsoft-store">Microsoft Store icon by Icons8</a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "top-nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "top-nav";
+            }
+        }
+    </script>
+</body>
+</html>
