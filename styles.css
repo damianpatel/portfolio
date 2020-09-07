@@ -249,6 +249,7 @@ p {
     #navbar .navbar-mobile-spacing {
         margin-bottom: 10px;
     }
+    
     #profile {
         height: 150px;
     }
@@ -309,7 +310,8 @@ p {
     margin-bottom: 25px;
 }
 #resume-button {
-    border-radius: 33px;
+    /* border-radius: 33px; */
+    border-radius: 5px;
     /* margin: -10px; */
     padding-left: 10px;
     padding-right: 10px;
@@ -322,7 +324,7 @@ p {
     text-decoration-style: none;
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 1.5px;
-    background: linear-gradient(rgb(174, 101, 235), rgb(204, 145, 238), rgb(219, 193, 235));
+    background: rgb(227, 157, 248);
     color: rgba(39, 38, 38, 0.842);
     height: 50px;
     display: flex;
