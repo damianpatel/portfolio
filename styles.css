@@ -177,6 +177,12 @@ p {
     .subtitle {
         font-size: 58px;
     }
+    #about-text {
+        max-width: 1000px;
+    }
+    .project-description {
+        max-width: 800px;
+    }
     .project-description .desc {
         font-size: 25px;
     }
@@ -258,7 +264,7 @@ p {
     width: 100%;
     min-height: 40vh;
     /* background: linear-gradient(rgba(91, 91, 252, 0.829), rgba(141, 141, 252, 0.726)); */
-    background: rgb(165, 165, 241);
+    background: rgba(165, 165, 241, 0.856);
     /* position: absolute; */
     top: 505px;
     left: 0;
@@ -288,13 +294,13 @@ p {
 #about-text {
     font-size: 1.5vw;
     width: 90%;
-    text-align: left;
+    text-align: center;
 }
 .resume {
     width: 100%;
     min-height: 30vh;
     /* background: linear-gradient(rgb(125, 230, 104), rgb(157, 236, 137), rgb(59, 216, 59)); */
-    background: rgb(144, 243, 144);
+    background: rgba(152, 243, 144, 0.664);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,7 +354,7 @@ p {
     width: 100%;
     min-height: 40vh;
     /* background: linear-gradient(rgba(48, 195, 253, 0.829), rgb(128, 234, 253)); */
-    background: rgb(144, 211, 238);
+    background: rgba(148, 212, 238, 0.849);
     display: flex;
     flex-direction: column;
     align-items: center;
