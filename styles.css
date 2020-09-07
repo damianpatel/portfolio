@@ -76,7 +76,8 @@ p {
     top: 0;
     height: 26px;
     width: 100%;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -95,7 +96,8 @@ p {
 .top-nav li {
     display: inline-flex;
     text-align: center;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    justify-content: center;
 }
 .top-nav a {
     height: 70px;
@@ -129,7 +131,7 @@ p {
     color: black;
     padding: 12px 16px;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 .dropdown-content a:hover {
     background: #ddd;
@@ -151,9 +153,29 @@ p {
         display: block;
     }
 }
+@media screen and (min-width: 651px) {
+    .top-nav li {
+        margin-right: 30px;
+        justify-content: center;
+        text-align: center;
+
+    }
+    #home-button {
+        margin-left: 50px;
+    }
+    #profile {
+        height: 175px;
+    }
+}
 @media screen and (min-width: 1000px) {
     p {
         font-size: 35px;
+    }
+    .title {
+        font-size: 125px;
+    }
+    .subtitle {
+        font-size: 58px;
     }
     .project-description .desc {
         font-size: 25px;
@@ -166,6 +188,9 @@ p {
     }
     #profile {
         height: 250px;
+    }
+    .top-nav li {
+        margin-right: 30px;
     }
 }
 @media screen and (max-width: 450px) {
@@ -231,7 +256,8 @@ p {
 .about {
     width: 100%;
     min-height: 40vh;
-    background: linear-gradient(rgba(91, 91, 252, 0.829), rgba(141, 141, 252, 0.726));
+    /* background: linear-gradient(rgba(91, 91, 252, 0.829), rgba(141, 141, 252, 0.726)); */
+    background: rgb(165, 165, 241);
     /* position: absolute; */
     top: 505px;
     left: 0;
@@ -266,7 +292,8 @@ p {
 .resume {
     width: 100%;
     min-height: 30vh;
-    background: linear-gradient(rgb(79, 194, 56), rgb(157, 236, 137), rgb(59, 216, 59));
+    /* background: linear-gradient(rgb(125, 230, 104), rgb(157, 236, 137), rgb(59, 216, 59)); */
+    background: rgb(144, 243, 144);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +345,8 @@ p {
 .projects {
     width: 100%;
     min-height: 40vh;
-    background: linear-gradient(rgba(48, 195, 253, 0.829), rgb(128, 234, 253));
+    /* background: linear-gradient(rgba(48, 195, 253, 0.829), rgb(128, 234, 253)); */
+    background: rgb(144, 211, 238);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,6 +379,7 @@ p {
 }
 .desc {
     font-size: 18px;
+    font-weight: bold;
     color: white;
     margin-bottom: 30px;
 }
@@ -406,7 +435,8 @@ p {
 .contact {
     width: 100%;
     min-height: 5vh;
-    background: linear-gradient(rgb(245, 245, 154), beige);
+    /* background: linear-gradient(rgb(245, 245, 154), beige); */
+    background: rgb(247, 247, 207);
     display: flex;
     flex-direction: column;
     align-items: center;
