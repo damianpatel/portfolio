@@ -12,9 +12,9 @@ p {
 }
 .banner {
     width: 100%;
-    height: auto;
-    background: linear-gradient(rgb(248, 60, 60), rgba(247, 129, 129, 0.699));
-    display: inline-block;
+    height: 100vh;
+    background: #e63946;
+    display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -25,7 +25,6 @@ p {
     display: inline-flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 15vh;
     /* transform: translateY(175%); */
     /* box-sizing: border-box; */
     /* position: absolute; */
@@ -35,7 +34,7 @@ p {
     transform: translate(-50%, -50%);  */
 }
 .title, .subtitle {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
     border-right: .45em solid white;
     white-space: nowrap;
@@ -109,7 +108,7 @@ p {
     font-size: 23px;
     text-decoration: none;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .top-nav a:hover {
@@ -223,12 +222,6 @@ p {
         padding: 0px; */
         /* display: block; */
     }
-    .top-nav.responsive .icon {
-        /* right: 0; */
-        /* position: absolute; */
-        /* right: 0;
-        top: 0; */
-    }
     .top-nav.responsive a {
         float: left;
         display: flex;
@@ -255,16 +248,21 @@ p {
     #navbar .navbar-mobile-spacing {
         margin-bottom: 10px;
     }
-    
     #profile {
         height: 150px;
+    }
+    .source #github {
+        color: black;
+    }
+    .source #microsoft {
+        color: rgb(99, 83, 241);
     }
 }
 .about {
     width: 100%;
     min-height: 40vh;
     /* background: linear-gradient(rgba(91, 91, 252, 0.829), rgba(141, 141, 252, 0.726)); */
-    background: rgba(165, 165, 241, 0.856);
+    background: #f1faee;
     /* position: absolute; */
     top: 505px;
     left: 0;
@@ -277,7 +275,7 @@ p {
     margin-bottom: 5px;
 }
 .banner-title > h1{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
 }
 #profile {
@@ -296,11 +294,14 @@ p {
     width: 90%;
     text-align: center;
 }
+#about-font {
+    color: black;
+}
 .resume {
     width: 100%;
     min-height: 30vh;
     /* background: linear-gradient(rgb(125, 230, 104), rgb(157, 236, 137), rgb(59, 216, 59)); */
-    background: rgba(152, 243, 144, 0.664);
+    background: #a8dadc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,7 +355,7 @@ p {
     width: 100%;
     min-height: 40vh;
     /* background: linear-gradient(rgba(48, 195, 253, 0.829), rgb(128, 234, 253)); */
-    background: rgba(148, 212, 238, 0.849);
+    background: #457b9d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,18 +371,18 @@ p {
     flex-direction: column;
 }
 .project-title {
-    color: rgb(245, 99, 99);
+    color: rgb(243, 181, 181);
     font-size: 20px;
-    font-family: Cambria, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     letter-spacing: 1.7px;
 }
 .project-description {
     margin: auto;
     width: 80%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
-    color: rgb(245, 99, 99);
+    color: rgb(243, 181, 181);
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -403,7 +404,7 @@ p {
 .technologies h2 {
     /* font-size: 3vw; */
     padding: 8px;
-    border: 2px solid rgb(245, 99, 99);
+    border: 2px solid rgb(243, 181, 181);
     border-radius: 25px 25px 25px;
     margin: 10px;
 }
@@ -433,18 +434,31 @@ p {
     flex-direction: row;
     justify-content: center;
 }
-.source > a:hover {
-    opacity: 0.6;
+.source #github {
+    color: rgb(175, 172, 172);
+}
+.source #github:hover {
+    transition: all .15s;
+    opacity: .85;
+    color: black;
+}
+.source #microsoft {
+    color: rgb(175, 172, 172);
+}
+.source #microsoft:hover {
+    transition: all .15s;
+    opacity: .85;
+    color: rgb(99, 83, 241);
 }
 .source-title {
-    color: rgb(245, 99, 99);
-    font-family: Cambria, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(243, 181, 181);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contact {
     width: 100%;
     min-height: 5vh;
     /* background: linear-gradient(rgb(245, 245, 154), beige); */
-    background: rgb(247, 247, 207);
+    background: #1d3557;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,6 +476,7 @@ p {
 }
 #contact-info-container a:link {
     text-decoration: none;
+    color: rgb(156, 183, 241);
 }
 #contact-info-container a:hover {
     opacity: 0.6;
@@ -471,12 +486,25 @@ p {
     flex-flow: row;
 }
 #contact-links a {
-    color: rgb(2, 134, 250);
+    color: rgb(175, 172, 172);
     margin-right: 10px;
     margin-bottom: 15px;
 }
-#contact-links a:hover {
-    opacity: 0.6;
+#contact-links #mail:hover {
+    /* opacity: 0.6; */
+    color: rgb(94, 158, 255);
+    opacity: .85;
+    transition: all .15s;
+}
+#contact-links #linkedin:hover {
+    color: #0072b1;
+    opacity: .85;
+    transition: all .15s
+}
+#contact-links #github:hover {
+    color: black;
+    opacity: .85;
+    transition: all .15s
 }
 #footer {
     background: rgba(0, 0, 0, 0.253);
