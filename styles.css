@@ -331,7 +331,8 @@ p {
   text-decoration: none;
   text-decoration-line: none;
   text-decoration-style: none;
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
   letter-spacing: 1.5px;
   background: rgb(227, 157, 248);
   color: rgba(39, 38, 38, 0.842);
@@ -511,9 +512,9 @@ p {
   transition: 0.3s;
   width: 80%;
 }
-#myImg:hover, #myImg2:hover, #myImg3:hover {opacity: 0.6;}
-#flappyimg1:hover, #flappyimg2:hover, #flappyimg3:hover {opacity: 0.6;}
-#sudokuimg1:hover, #sudokuimg2:hover, #sudokuimg3:hover {opacity: 0.6;}
+#myImg:hover, #myImg2:hover, #myImg3:hover {opacity: 0.5;}
+#flappyimg1:hover, #flappyimg2:hover, #flappyimg3:hover {opacity: 0.5;}
+#sudokuimg1:hover, #sudokuimg2:hover, #sudokuimg3:hover {opacity: 0.5;}
 .modal {
   display: none;
   position: fixed;
