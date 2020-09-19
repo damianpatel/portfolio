@@ -384,11 +384,11 @@ p {
   user-select: none;
 }
 .next {
-  right: 20%;
+  right: 15%;
   /* border-radius: 3px 0 0 3px; */
 }
 .prev {
-  left: 20%;
+  left: 15%;
 }
 @media screen and (max-width: 850px) {
   .prev {
